@@ -28,6 +28,7 @@ library
       Lib
       Lista1
       Lista2
+      Lista3
       Merge
   other-modules:
       Paths_p3aula
