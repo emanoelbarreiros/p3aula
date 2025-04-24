@@ -1,5 +1,4 @@
 module Lista3 where
-import Main (main)
 
 --questao 1
 fatorial :: (Num t, Ord t) => t -> t
@@ -45,7 +44,6 @@ replicate2 0 _ = []
 replicate2 n el = el : replicate2 (n - 1) el
 
 --d
-(!!!)
 [] !!! _ = error "indice fora do intervalo"
 (x:xs) !!! 0 = x
 (x:xs) !!! n = xs !!! (n - 1)

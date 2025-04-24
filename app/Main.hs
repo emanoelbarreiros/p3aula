@@ -1,14 +1,12 @@
 module Main (main) where
 
-import Lib
 import Data.List
-import Merge
+import Lib
+
 
 main :: IO ()
 main = do
-    let lista = reverse [1 .. 10]
-    let ordenada = mergesort lista
-    print (show ordenada)
+    someFunc
 
 
 somaLista :: [Int] -> Int

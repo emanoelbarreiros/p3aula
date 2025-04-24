@@ -1,7 +1,6 @@
 module Lista1 where
 
 import Lista2
-import Text.ParserCombinators.ReadP (sepBy)
 
 --questao 1
 iguais :: (Eq a, Num b) => a -> a -> a -> b
