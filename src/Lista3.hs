@@ -37,16 +37,18 @@ concat2 [] = []
 concat2 (x:xs) = x ++ concat2 xs
 
 concat3 :: Foldable t => t [a] -> [a]
-concat3 xs = foldr (++) [] xs
+concat3 = foldr (++) []
 
 --c
+replicate2 :: Int -> a -> [a]
 replicate2 0 _ = []
 replicate2 n el = el : replicate2 (n - 1) el
 
 --d
+(!!!) :: [a] -> Int -> a
 [] !!! _ = error "indice fora do intervalo"
-(x:xs) !!! 0 = x
-(x:xs) !!! n = xs !!! (n - 1)
+(x:_) !!! 0 = x
+(_:xs) !!! n = xs !!! (n - 1)
 
 --e
 elem2 :: Eq a => a -> [a] -> Bool
